@@ -1,16 +1,50 @@
-# random
+# 📱 Meal App - Flutter Project
 
-A new Flutter project.
+Nama: Rizki dwi anugrah
+Npm : 2331082 
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📌 Deskripsi Project
+Aplikasi ini adalah aplikasi Flutter berbasis data (data-driven) yang mengambil data makanan dari Public API. Aplikasi ini menerapkan arsitektur yang rapi, fitur offline, serta tampilan UI yang responsif.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🧱 Struktur Folder
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- models/ → struktur data
+- services/ → logika API
+- providers/ → manajemen state
+- views/ → tampilan UI
+- widgets/ → komponen yang dapat digunakan ulang
+
+---
+
+## ⚙️ State Management
+Saya menggunakan **Provider** karena sederhana, ringan, dan cocok untuk mengelola state pada aplikasi skala kecil hingga menengah.
+
+---
+
+## 🌐 Integrasi API
+Aplikasi mengambil data dari API TheMealDB menggunakan HTTP request. Semua logika API dipisahkan ke dalam folder `services`.
+
+---
+
+## 💾 Dukungan Offline
+Aplikasi menggunakan **SharedPreferences** untuk menyimpan cache data terakhir.  
+Jika tidak ada koneksi internet, aplikasi tetap dapat menampilkan data yang sudah disimpan sebelumnya.
+
+---
+
+## 🔍 Fitur Aplikasi
+- Mengambil data dari API
+- Mendukung mode offline
+- Fitur pencarian (search)
+- Fitur filter berdasarkan kategori
+- Loading indicator
+- Error handling dengan tampilan yang user-friendly
+
+---
+
+## 🎯 Kesimpulan
+Project ini menunjukkan penerapan arsitektur yang bersih, penggunaan state management yang tepat, serta desain UI yang responsif dalam pengembangan aplikasi Flutter.
